@@ -1,10 +1,130 @@
-<html>
+<!DOCTYPE html>
+<html lang="ko">
   <head>
-    <title>Simple Homepage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>서울대 핀테크 연구소</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      header {
+        background-color: #00274c;
+        color: white;
+        padding: 1.2rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1.5rem;
+        font-size: 1rem;
+      }
+
+      .hero {
+        background: linear-gradient(to right, #004080, #0066cc);
+        color: white;
+        text-align: center;
+        padding: 4rem 2rem;
+      }
+
+      .hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+      }
+
+      .section {
+        padding: 3rem 2rem;
+        max-width: 900px;
+        margin: auto;
+      }
+
+      .section h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        color: #004080;
+      }
+
+      footer {
+        background-color: #eee;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.9rem;
+        color: #555;
+        margin-top: 3rem;
+      }
+
+      @media (max-width: 600px) {
+        nav a {
+          margin-left: 0.8rem;
+          font-size: 0.9rem;
+        }
+
+        .hero h2 {
+          font-size: 2rem;
+        }
+      }
+    </style>
   </head>
+
   <body>
-    <h1>Title of My Simple Homepage</h1>
-    <h2>Subtitle</h2>
-    <p>Paragraph.</p>
+    <header>
+      <h1>서울대 핀테크</h1>
+      <nav>
+        <a href="#research">연구</a>
+        <a href="#courses">강의</a>
+        <a href="#news">소식</a>
+        <a href="#contact">연락처</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>서울대학교 핀테크 연구소</h2>
+      <p>금융과 기술의 융합을 선도하는 지식의 중심</p>
+    </section>
+
+    <section class="section" id="research">
+      <h3>주요 연구</h3>
+      <p>
+        알고리즘 트레이딩, 머신러닝 기반 리스크 관리, 블록체인 금융 인프라 등 다양한 연구 주제를 다룹니다.
+      </p>
+    </section>
+
+    <section class="section" id="courses">
+      <h3>개설 강의</h3>
+      <p>
+        데이터 사이언스, 금융공학, 인공지능 응용 등 핀테크 관련 커리큘럼을 제공합니다.
+      </p>
+    </section>
+
+    <section class="section" id="news">
+      <h3>최근 소식</h3>
+      <p>2025년 핀테크 포럼 개최 예정 (10월 예정). 자세한 일정은 추후 공지됩니다.</p>
+    </section>
+
+    <footer id="contact">
+      <p>서울대학교 핀테크 연구소 | fintech@snu.ac.kr</p>
+      <p>© 2025 Seoul National University Fintech Lab. All rights reserved.</p>
+    </footer>
   </body>
 </html>
